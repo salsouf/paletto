@@ -1,7 +1,7 @@
 'use strict';
 
 var paletto = function () {
-
+    var marbleNumber =1;
     var board;
     var init = function () {
 
@@ -78,8 +78,22 @@ var paletto = function () {
     return board[5][0];
     };
 
+    this.getMarble= function(){
+        marbleNumber=marbleNumber-1;
+
+    };
+    this.jauneplayer= function(coordinate){
+        var line = coordinate.charCodeAt(5) - 54;
+        var column = coordinate.charCodeAt(0) - 65;
+        //board[5][0]== "jaune";
+        this.getMarble();
+
+    };
+
     init();
 // private attributes and methods
 
 // public methods
 };
+
+
