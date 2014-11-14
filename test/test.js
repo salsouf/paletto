@@ -15,10 +15,8 @@ PalettoTestCase.prototype.testStory2 = function () {
 PalettoTestCase.prototype.testStory3= function () {
     var game = new paletto();
 
-    assertTrue (game.isjaune()=="jaune");
+    game.getMarble(0, "A6");
+    assertFalse (game.jauneplayer("A6")==1)
 };
-PalettoTestCase.prototype.testStory4=function (){
-    var game = new paletto();
 
-    game.getMarble(1, "A6");
-    assertFalse (game.jauneplayer("A6")==0)};
+
