@@ -83,12 +83,18 @@ var paletto = function () {
 
     };
     this.jauneplayer= function(coordinate){
-        var line = coordinate.charCodeAt(5) - 54;
+        var line = coordinate.charCodeAt(1) - 54;
         var column = coordinate.charCodeAt(0) - 65;
         //board[5][0]== "jaune";
         this.getMarble();
 
     };
+    this.secondplayer=function(coordinate){
+    var line = coordinate.charCodeAt(1) - 54;
+    var column = coordinate.charCodeAt(0) - 67;//C
+    var column = coordinate.charCodeAt(0) - 70;//F
+     this.getMarble();
+    }
 
     init();
 // private attributes and methods
